@@ -11,6 +11,6 @@ public class Unary extends Op {
         if(type == null) error("type error");
     }
     public Expr gen() { return new Unary(op, expr.reduce()); }
-    public String toSTring() { return op.toString() + " " + expr.toString(); }
+    public String toString() { return op.toString() + " " + expr.toString(); }
 }
 
